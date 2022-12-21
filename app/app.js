@@ -5,7 +5,12 @@ var rabbitMQHandler = require('./connection/connection')
 var app = express()
 var router = express.Router()
 var server = require('http').Server(app) 
-var socketIO = require('socket.io')(server)
+var socketIO = require('socket.io')(server, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"]
+  }
+})
 
 var calcSocket = socketIO.of('/calc')
 
