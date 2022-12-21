@@ -1,0 +1,4 @@
+app/node_modules
+server/node_modules
+server/parcel-cache
+server/dist
