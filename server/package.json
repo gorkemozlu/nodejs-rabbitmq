@@ -4,19 +4,31 @@
   "description": "parcel",
   "main": "app.js",
   "scripts": {
-    "prod": "node app.js",
-    "dev": "parcel index.html",
-    "build": "npm install"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "dependencies": {
     "parcel": "^2.8.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
     "socket.io-client": "^4.5.4",
     "url-search-params": "^1.1.0"
   },
   "devDependencies": {
     "buffer": "^5.7.1",
     "process": "^0.11.10"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
