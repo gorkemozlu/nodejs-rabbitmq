@@ -3,3 +3,4 @@ server/node_modules
 server/.parcel-cache
 server/dist
 server/build
+app/bindings
